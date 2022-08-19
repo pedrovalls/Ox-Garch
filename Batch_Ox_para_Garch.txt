@@ -1,0 +1,10 @@
+// Batch code for EQ( 1)
+module("PcGive");
+package("PcGive", "Single-equation");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOV_Per_SQ;
+    Z = Constant;
+}
+estimate("OLS", 2000-01-04, 0, 2022-07-15, 0);
