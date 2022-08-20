@@ -1,4 +1,5 @@
 wfopen C:\Users\Pedro\Dropbox\Topicos_em_Financas_2022\garch_model\dados_br.wf1 
+' periodo sem pandemia 
 smpl 1/04/2000 1/01/2020
 ' cria a serie dos quadrados
 series dibvsq=dlibov_per_sq
