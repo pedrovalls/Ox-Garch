@@ -18,6 +18,9 @@ MaxControlEps(0.0001,0.005);
 MAXSA(1,1.69407e-20,0.5,20,5,0.1,0.1);
 estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
 progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
 
 // Batch code for G@RCH(7)	  t-arch
 module("G@RCH");
@@ -39,6 +42,9 @@ MaxControlEps(0.0001,0.005);
 MAXSA(1,1.38778e-16,0.5,20,5,0.1,0.1);
 estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
 progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
 
 // Batch code for G@RCH(3)  GED-ARCH
 module("G@RCH");
@@ -60,6 +66,9 @@ MaxControlEps(0.0001,0.005);
 MAXSA(1,2.71051e-19,0.5,20,5,0.1,0.1);
 estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
 progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
 
 // Batch code for G@RCH(4)   Skt-ARCH
 module("G@RCH");
@@ -80,6 +89,7 @@ MaxControl(1000,0,0);
 MaxControlEps(0.0001,0.005);
 MAXSA(1,5.29397e-22,0.5,20,5,0.1,0.1);
 estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
-
-// progress
 progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
