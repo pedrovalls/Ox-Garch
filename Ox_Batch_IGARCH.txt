@@ -1,0 +1,92 @@
+// Batch code for N-IG@RCH(1,1)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("IGARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.04405e-52,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+
+// Batch code for t-IG@RCH(1,1)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(1);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("IGARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.04405e-52,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+
+// Batch code for GED-IG@RCH(1,1)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("IGARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.04405e-52,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+// Batch code for tSkSt-IGARCH(1,1)
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("IGARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.04405e-52,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
