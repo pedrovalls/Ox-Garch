@@ -1,0 +1,94 @@
+// Batch code for G@RCH(1)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GJR");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.86265e-08,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+
+// Batch code for G@RCH(2)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(1);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GJR");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,3.23118e-26,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+
+// Batch code for G@RCH(3)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GJR");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.73473e-17,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
+
+
+// Batch code for G@RCH(4)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GJR");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.73473e-17,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+progress;
+BOXPIERCE(5,10,20,50);
+Tests();
