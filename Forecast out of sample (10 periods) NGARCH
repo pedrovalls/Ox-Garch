@@ -1,0 +1,25 @@
+// Batch code for G@RCH(1)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,2.32831e-09,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0, 10);
+FORECAST(1,10, 1);
+For_Graphs(0,10,1,2,0);
+Print_VaR_out_of_sample_Forecast(0.025,0.975);
+FORECAST(1,10, 1);
+For_Graphs(0,10,1,2,0);
+
