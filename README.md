@@ -8,3 +8,5 @@ All distributions are considered: Normal, Symmetric Student-t, GED and Skew Stud
 Also NGARCH is estimated without the last 10 observations and out-of-sample forecast is done.
 
 Plot the forecast for the conditional mean and also with the V@R(0.025) and V@R(0.975).
+
+Test for Long Memory Hurst-Mandelbrot with the correction by Lo 
