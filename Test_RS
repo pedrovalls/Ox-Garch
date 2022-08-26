@@ -1,0 +1,9 @@
+// Batch code for G@RCH(2)
+module("G@RCH");
+package("Garch", "Descriptive");
+usedata("DADOS_BR.xlsx");
+system
+{
+    T = absDLIBOVM;
+}
+estimate("Test", 2000-01-04, 0, 2022-07-15, 0);
