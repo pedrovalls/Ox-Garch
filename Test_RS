@@ -1,9 +1,19 @@
-// Batch code for G@RCH(2)
+// Batch code for test R/S for absDLIBOVM
 module("G@RCH");
 package("Garch", "Descriptive");
 usedata("DADOS_BR.xlsx");
 system
 {
     T = absDLIBOVM;
+}
+estimate("Test", 2000-01-04, 0, 2022-07-15, 0);
+
+// Batch code for test R/S for DLIBOVM
+module("G@RCH");
+package("Garch", "Descriptive");
+usedata("DADOS_BR.xlsx");
+system
+{
+    T = DLIBOVM;
 }
 estimate("Test", 2000-01-04, 0, 2022-07-15, 0);
