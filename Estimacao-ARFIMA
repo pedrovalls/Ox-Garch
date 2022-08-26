@@ -1,0 +1,12 @@
+// Batch code for Arfima( 2)
+module("PcGive");
+package("ARFIMA");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = absDLIBOVM;
+    X = Constant;
+}
+ARFIMA(0,d,1);
+estimate("MPL", 2000-01-04, 0, 2022-07-15, 0);
+testsummary();
