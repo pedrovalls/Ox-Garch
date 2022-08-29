@@ -13,3 +13,5 @@ Test for Long Memory Hurst-Mandelbrot with the correction by Lo.
 
 Estimation of ARFIMA model for the conditional mean.
 
+Estimation of FIGARCH(1,d,1) 
+
