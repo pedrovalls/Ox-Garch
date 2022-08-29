@@ -1,0 +1,91 @@
+// Batch code for N-APARCH
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("APARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for St-APARCH
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("APARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for GED-APARCH
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("APARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for SkSt-APARCH
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("APARCH");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
