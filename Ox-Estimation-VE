@@ -1,0 +1,13 @@
+// Batch code for UC(1)
+module("STAMP");
+package("UCstamp");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = LDLIBOVMSQ;
+}
+setcmp("level", 0, 0, 0, 0);
+setcmp("ar", 1, 0.464947, 0.982013, 0);
+setcmp("irregular", 0, 5.1144, 0, 0);
+setmodel();
+estimate("MAXSTAMP", 2000-01-04, 0, 2022-07-15, 0);
