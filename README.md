@@ -19,4 +19,4 @@ Estimation of FIEGARCH(1,1)
 
 Estimation of FIAPARCH(1,1).
 
-Estimation of HY
+Estimation of GAS, EGAS and AEGAS models.
