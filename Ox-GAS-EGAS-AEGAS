@@ -1,0 +1,288 @@
+// Batch code for N-GAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.86265e-08,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+// Batch code for St-GAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(1);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.86265e-08,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+// Batch code for GED-GAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.86265e-08,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+// Batch code for SkSt-GAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("GAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+MAXSA(1,1.86265e-08,0.5,20,5,0.1,0.1);
+estimate("MaxSA", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for N-EGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("EGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for St-EGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(1);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("EGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for GED-EGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("EGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for SkSt-EGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("EGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+// Batch code for G@RCH(13)
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(0);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("AEGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+// Batch code for St-AEGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(1);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("AEGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+
+// Batch code for GED-AEGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(2);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("AEGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
+// Batch code for SkSt-AEGAS
+module("G@RCH");
+package("Garch", "GARCH");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = DLIBOVM;
+}
+CSTS(1,1);
+DISTRI(3);
+ARMA_ORDERS(0,0);
+ARFIMA(0);
+GARCH_ORDERS(1,1);
+MODEL("AEGAS");
+MLE(2);
+MaxControl(1000,0,0);
+MaxControlEps(0.0001,0.005);
+estimate("BFGS", 2000-01-04, 0, 2022-07-15, 0);
+BOXPIERCE(5,10,20,50);
+Tests();
+TestGraphicAnalysis(0,0,0,0,0,1,0,0,0,0);
+progress;
+
+
