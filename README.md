@@ -13,10 +13,12 @@ Test for Long Memory Hurst-Mandelbrot with the correction by Lo.
 
 Estimation of ARFIMA model for the conditional mean.
 
-Estimation of FIGARCH(1,d,1) 
+Estimation of FIGARCH(1,d,1).
 
-Estimation of FIEGARCH(1,1)
+Estimation of FIEGARCH(1,d,1).
 
-Estimation of FIAPARCH(1,1).
+Estimation of FIAPARCH(1,d,1).
+
+Estimation of HYGARCH(1,d,1).
 
 Estimation of GAS, EGAS and AEGAS models.
