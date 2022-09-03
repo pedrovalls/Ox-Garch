@@ -3,7 +3,7 @@ OxMetrics batch codes for Engle's test for conditional heteroskedasticity and fo
 
 The Models are: ARCH(1), GARCH(1,1), EGARCH(1,1) GJR(1,1) and APARCH(1,1). 
 
-All distributions are considered: Normal, Symmetric Student-t, GED and Skew Student-t.
+All distributions considered are: Normal, Symmetric Student-t, GED and Skew Student-t.
 
 Also NGARCH is estimated without the last 10 observations and out-of-sample forecast is done.
 
