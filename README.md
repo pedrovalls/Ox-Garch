@@ -1,7 +1,7 @@
 # Ox-Garch
 OxMetrics batch codes for Engle's test for conditional heteroskedasticity and for estimating Univariate GARCH Models.
 
-The Models are: ARCH(1), GARCH(1,1), EGARCH(1,1) and GJR(1,1).
+The Models are: ARCH(1), GARCH(1,1), EGARCH(1,1) GJR(1,1) and APARCH(1,1). 
 
 All distributions are considered: Normal, Symmetric Student-t, GED and Skew Student-t.
 
@@ -18,3 +18,5 @@ Estimation of FIGARCH(1,d,1)
 Estimation of FIEGARCH(1,1)
 
 Estimation of FIAPARCH(1,1).
+
+Estimation of HY
