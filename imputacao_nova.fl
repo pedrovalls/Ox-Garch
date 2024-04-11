@@ -1,0 +1,17 @@
+// Batch code for UC( 1)
+module("STAMP");
+package("UCstamp");
+usedata("DADOS_BR.xlsx");
+system
+{
+    Y = IBOVC;
+}
+setcmp("level", 0, 766758, 0, 0);
+setcmp("irregular", 0, 90032.7, 0, 0);
+setmodel();
+estimate("MAXSTAMP", 2000-01-03, 0, 2022-07-15, 0);
+store("components","smo");
+algebra
+{
+IBOVC_SB = "IBOVC-Level"+ "IBOVC-Irregular";
+}
